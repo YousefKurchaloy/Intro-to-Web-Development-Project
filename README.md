@@ -2,7 +2,7 @@
 This repository showcases a **collaborative** project developed as part of the "**Introduction to Web Development**" course. Designed to meet course requirements and demonstrate our skills, this project reflects our understanding of modern web development principles.
 
 ## Educational Website Project - Intro to Web Development
-This repository contains our **Intro to Web Development** course project, where we designed and developed an **educational website** focused on enhancing the learning experience for users. This project combines **creativity**, ***responsiveness**, and **functionality** to deliver a **user-friendly** platform for **Learning Programming Languages**.
+This repository contains our **Intro to Web Development** course project, where we designed and developed an **educational website** focused on enhancing the learning experience for users. This project combines **creativity**, **responsiveness**, and **functionality** to deliver a **user-friendly** platform for **Learning Programming Languages**.
 
 ## 🌟 Project Overview:
 Our task was to create a website with the following features:

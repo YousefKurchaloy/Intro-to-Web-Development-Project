@@ -17,6 +17,6 @@ Our task was to create a website with the following features:
 - **Bootstrap**: Enhancing responsiveness and aesthetics.
 
 ## 🖥️ Live Demo:
-The website is hosted online for public access. [Include a link to the live demo once hosted, e.g., GitHub Pages or another hosting service.]
+The website is hosted online for public access. [Team 6](https://team6.me/)
 
 Feel free to explore the project, use it as a learning resource, or provide feedback. This project reflects our dedication to creating impactful and accessible educational tools through modern web development!

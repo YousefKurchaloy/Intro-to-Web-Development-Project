@@ -1,0 +1,14 @@
+.banner {
+  background: linear-gradient(to bottom right, #164bdb 0%, #333333 100%);
+  margin: 0;
+  width: 100%;
+  height: 500px;
+}
+.banner h1 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  height: 100%;
+  padding: 200px 0;
+  margin: 0;
+}

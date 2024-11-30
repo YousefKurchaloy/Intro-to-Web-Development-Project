@@ -1,0 +1,27 @@
+.signup input,
+.signup button,
+.signup select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    padding-right: 0;
+}
+
+.signup label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.signup .radio-option,
+.signup .checkbox-option {
+    display: block;
+    width: 100%;
+}
+
+.signup .radio-option input,
+.signup .checkbox-option input {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}

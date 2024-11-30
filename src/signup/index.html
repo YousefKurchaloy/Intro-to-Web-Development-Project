@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../home/index.html">Home</a>
+        <a href="../courses/index.html">Courses</a>
+        <a href="../testimonials/index.html">Testimonials</a>
+        <a href="../contact/index.html">Contact</a>
+        <a href="../about/index.html">About</a>
+        <a href="../resources/index.html">Resources</a>
+        <a class="active" style="float: right" href="../signup/index.html">Signup</a
+      >
+    </div>
+
+    <div class="container">
+      <div class="signup">
+        <h2>Sign Up For Our <a href="../courses/index.html">Courses</a></h2>
+        <form action="post">
+            <label for="name">Enter your full name:</label>
+            <input id="name" type="text" placeholder="Name" required />
+
+            <label for="email">Enter your email:</label>
+            <input id="email" type="email" placeholder="Email" required />
+
+            <label for="password">Enter your password:</label>
+            <input id="password" type="password" placeholder="Password" required />
+
+            <label for="phone">Enter your phone number:</label>
+            <input id="phone" type="tel" placeholder="Phone Number" required />
+
+            <label for="education">Enter your education level:</label>
+            <select name="education" id="education">
+            <option value="under-grad">Under Graduate</option>
+            <option value="diploma">Diploma</option>
+            <option value="bachelor">Bachelor's</option>
+          </select>
+
+            <label>Please select your gender:</label>
+            <div class="radio-option">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="rnts" name="gender" value="rnts" checked />
+                <label for="rnts">Rather not to say</label>
+            </div>
+
+            <label>Select your intreasts:</label>
+            <div class="checkbox-option">
+                <input type="checkbox" id="frontend" name="frontend" value="frontend" />
+                <label for="frontend">Front-end Web Development</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="backend" name="backend" value="backend" />
+                <label for="backend">Back-end Development</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="fullstack" name="fullstack" value="fullstack" />
+                <label for="fullstack">Full-stack Web Development</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="cybersecurity" name="cybersecurity" value="cybersecurity" />
+                <label for="cybersecurity">Cyber Security</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="ai" name="ai" value="ai" />
+                <label for="ai">Artificial Intelligence</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="data" name="data" value="data" />
+                <label for="data">Data Analysis</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <p>
+            Made by: <a href="https://github.com/baselja211">Basel</a>,
+            <a href="https://github.com/hamza10755">Hamza</a>,
+            <a href="https://github.com/dotacow">Yousef</a> and
+            <a href="https://github.com/YousefKurchaloy">Yousef</a>.
+        </p>
+        <p>
+            You can check out the source code for this website here
+            <i class="fa fa-arrow-right"></i>
+            <a href="https://github.com/YousefKurchaloy/Intro-to-Web-Development-Project"><i style="font-size: 20px" class="fa fa-github"></i
+        ></a>
+        </p>
+    </footer>
+</body>
+
+</html>

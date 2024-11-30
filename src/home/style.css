@@ -1,14 +1,27 @@
 .banner {
-  background: linear-gradient(to bottom right, #164bdb 0%, #333333 100%);
-  margin: 0;
-  width: 100%;
-  height: 500px;
+    background: linear-gradient(to bottom right, #164bdb 0%, #333333 100%);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: 700px;
+    color: white;
 }
+
 .banner h1 {
-  color: white;
-  font-size: 3em;
-  text-align: center;
-  height: 100%;
-  padding: 200px 0;
-  margin: 0;
+    font-size: 3rem;
+    padding-top: 200px;
+    font-family: Monaco, monospace;
+    margin: 0;
+}
+
+.container {
+    padding: 60px 0;
+}
+
+.chooseus {
+    background-color: #c7c7c7;
+}
+
+.chooseus ul {
+    list-style-type: circle;
 }

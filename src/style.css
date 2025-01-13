@@ -6,42 +6,6 @@ body {
   flex-direction: column;
 }
 
-/* navbar styling */
-
-.topnav {
-  overflow: hidden;
-  background-color: #333333;
-}
-
-.topnav a {
-  float: left;
-  color: #c7c7c7;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #c7c7c7;
-  color: #333333;
-}
-
-.topnav a.active {
-  background-color: #164bdb;
-  color: white;
-}
-
-/* home */
-
-.chooseus {
-  background-color: #c7c7c7;
-}
-
-.chooseus ul {
-  list-style-type: circle;
-}
-
 /* footer styling */
 
 footer {

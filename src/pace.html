@@ -120,6 +120,7 @@
           Calculate
         </button>
       </form>
+      <div id="result" class="mt-4"></div>
     </div>
     <footer class="footer d-block mt-auto">
       <p>
@@ -145,6 +146,8 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      const courseDurations = {C: 40,html: 20,css: 20,js: 40};
+
       function calculatePace() {
         let isValid = true;
 
@@ -196,9 +199,25 @@
           enrollError.textContent = "";
           enrollError.classList.remove("text-danger");
         }
+
         if (isValid) {
-          alert("Form submitted successfully!");
-          return true;
+          let totalHours = 0;
+          courseInputs.forEach((input) => {
+            if (input.checked) {
+              totalHours += courseDurations[input.value];
+            }
+          });
+
+          const weeksNeeded = totalHours / hoursValue;
+          const endDate = new Date(startDate);
+          endDate.setDate(endDate.getDate() + Math.ceil(weeksNeeded * 7));
+
+          const resultDiv = document.getElementById("result");
+          resultDiv.innerHTML = `<div class="alert alert-success">
+              Estimated Completion Date: ${endDate.toDateString()}
+            </div>`;
+
+          return false;
         } else {
           return false;
         }
@@ -212,6 +231,8 @@
 
         const invalidInputs = document.querySelectorAll(".is-invalid");
         invalidInputs.forEach((input) => input.classList.remove("is-invalid"));
+
+        document.getElementById("result").innerHTML = "";
       }
     </script>
   </body>

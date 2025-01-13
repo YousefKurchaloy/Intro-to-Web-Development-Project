@@ -120,7 +120,7 @@
           Calculate
         </button>
       </form>
-      <div id="result" class="mt-4"></div>
+      <textarea id="result" rows="10" class="mt-4 w-100"></textarea>
     </div>
     <footer class="footer d-block mt-auto">
       <p>
@@ -146,7 +146,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const courseDurations = {C: 40,html: 20,css: 20,js: 40};
+      const courseDurations = { C: 20, html: 8, css: 8, js: 16 };
 
       function calculatePace() {
         let isValid = true;
@@ -202,20 +202,24 @@
 
         if (isValid) {
           let totalHours = 0;
+          let selectedCourses = [];
           courseInputs.forEach((input) => {
             if (input.checked) {
               totalHours += courseDurations[input.value];
+              selectedCourses.push(input.value);
             }
           });
 
-          const weeksNeeded = totalHours / hoursValue;
+          const weeksNeeded = Math.ceil(totalHours / hoursValue);
           const endDate = new Date(startDate);
-          endDate.setDate(endDate.getDate() + Math.ceil(weeksNeeded * 7));
+          endDate.setDate(endDate.getDate() + weeksNeeded * 7);
 
-          const resultDiv = document.getElementById("result");
-          resultDiv.innerHTML = `<div class="alert alert-success">
-              Estimated Completion Date: ${endDate.toDateString()}
-            </div>`;
+          const result = document.getElementById("result");
+          result.innerHTML = `Based on your selected courses,
+${selectedCourses.join(", ")}.
+If you study ${hoursValue} hours/week,
+you will need ${weeksNeeded} weeks to complete the selected courses.
+Estimated Completion Date: ${endDate.toDateString()}`;
 
           return false;
         } else {

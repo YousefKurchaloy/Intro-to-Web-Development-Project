@@ -1,75 +1,91 @@
 body {
-    margin: 0;
-    font-family: "Lucida Console", "Courier New", monospace;
+  margin: 0 !important;
+  font-family: "Lucida Console", "Courier New", monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* navbar styling */
 
 .topnav {
-    overflow: hidden;
-    background-color: #333333;
+  overflow: hidden;
+  background-color: #333333;
 }
 
 .topnav a {
-    float: left;
-    color: #c7c7c7;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: #c7c7c7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: #c7c7c7;
-    color: #333333;
+  background-color: #c7c7c7;
+  color: #333333;
 }
 
 .topnav a.active {
-    background-color: #164bdb;
-    color: white;
+  background-color: #164bdb;
+  color: white;
 }
 
+/* home */
 
-/* utils styling */
-
-.container {
-    max-width: 90%;
-    margin: 0 40px;
-    padding: 20px;
+.chooseus {
+  background-color: #c7c7c7;
 }
 
-
-/*theme styling */
-
-a {
-    color: #55c360;
+.chooseus ul {
+  list-style-type: circle;
 }
-
-a:hover {
-    color: #37aa43;
-}
-
-button {
-    color: #ffffff;
-    background-color: #55c360;
-    border: none;
-    border-radius: 3px;
-    padding: 12px !important;
-}
-
-button:hover {
-    background-color: #37aa43;
-    cursor: pointer;
-}
-
 
 /* footer styling */
 
 footer {
-    width: 100%;
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 15%;
+  height: 40%;
+  display: inline-block;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  padding: 20px 16px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+a .card {
+  color: #000;
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* signup */
+
+/* resources */
+.phase {
+  padding: 20px;
+}
+
+.resource img {
+  margin: auto;
+  width: 40%;
 }

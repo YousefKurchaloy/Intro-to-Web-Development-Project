@@ -15,3 +15,6 @@ Our task was to create a website with the following features:
 - **CSS**: Styling for a visually attractive design.
 - **JavaScript**: Adding interactivity and dynamic behavior.
 - **Bootstrap**: Enhancing responsiveness and aesthetics.
+
+---
+[Click here to see a live view of the website hosted using github pages(https://yousefkurchaloy.github.io/Intro-to-Web-Development-Project/src/home.html)

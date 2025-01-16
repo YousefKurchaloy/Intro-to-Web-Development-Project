@@ -17,4 +17,4 @@ Our task was to create a website with the following features:
 - **Bootstrap**: Enhancing responsiveness and aesthetics.
 
 ---
-[Click here to see a live view of the website hosted using github pages(https://yousefkurchaloy.github.io/Intro-to-Web-Development-Project/src/home.html)
+[Click here to see a live view of the website hosted using github pages](https://yousefkurchaloy.github.io/Intro-to-Web-Development-Project/src/home.html)
